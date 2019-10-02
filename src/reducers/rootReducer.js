@@ -7,3 +7,5 @@ const links = (state={links: init_links}, action) =>{
             return state;
     }
 }
+
+export default links
