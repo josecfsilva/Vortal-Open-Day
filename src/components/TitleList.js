@@ -4,25 +4,39 @@ import Title from './Title'
 
 import { Anchor } from 'antd';
 
+const handleClick = (e, link) => {
+  e.preventDefault();
+  switch (link.title) {
+    case "Task1":
+      
+      break;
+    case "Task2":
+
+      break;
+    case "Task3":
+
+      break;
+    case "Contacts":
+
+      break;
+    default:
+      break;
+  }
+};
+
 const TitleList = ({ titles, toggleTitle }) => (
-  /*<ul>
-    {titles.map(title =>
-      <Title
-        key={title.id}
-        {...title}
-        onClick={() => toggleTitle(title.id)}
-      />
-    )}
-  </ul>*/
-  <Anchor affix={false}>
-    {titles.map(title =>
-      <Title
-        key={title.id}
-        {...title}
-        onClick={() => toggleTitle(title.id)}
-      />
-    )}
-  </Anchor>
+  <div>
+    <Anchor affix={true} onClick={handleClick}>
+      {titles.map(title =>
+        <Title
+          key={title.id}
+          {...title}
+          onClick={() => console.log("")}
+        />
+      )}
+    </Anchor>
+  </div>
+
 )
 
 TitleList.propTypes = {
