@@ -1,6 +1,8 @@
 import React from 'react';
 import VisibleTitleList from '../containers/VisibleTitleList';
+
 import 'antd/dist/antd.css';
+
 import Task1 from './layout/Task1';
 import Task2 from './layout/Task2';
 import Task3 from './layout/Task3';

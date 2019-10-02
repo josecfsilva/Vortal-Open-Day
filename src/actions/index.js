@@ -18,6 +18,7 @@ export const toggleTitle = id => ({
 // To change to different Pages
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',
-  SHOW_COMPLETED: 'SHOW_COMPLETED',
-  SHOW_ACTIVE: 'SHOW_ACTIVE'
+  SHOW_PAGE2: 'SHOW_PAGE2',
+  SHOW_PAGE3: 'SHOW_PAGE3',
+  SHOW_CONTACTS: 'SHOW_CONTACTS'
 }
